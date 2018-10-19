@@ -2,8 +2,9 @@
 
 # how to use
 
-In you'r scrollview delegate, must implement scrollview delegate for your webview.
+#### In you'r scrollview delegate, must implement scrollview delegate for your webview.
 
+```
 func scrollViewDidEndDragging(_ scrollView: UIScrollView,
                                            willDecelerate decelerate: Bool) {
         self.webView.didScrollEnd { (atbottom, attop) in
@@ -14,3 +15,4 @@ func scrollViewDidEndDragging(_ scrollView: UIScrollView,
             }
         }
     }
+```
